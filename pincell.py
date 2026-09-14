@@ -54,9 +54,9 @@ zircaloy.set_density("g/cm3", 6.55)
 box = openmc.model.RectangularPrism(width = 1.4, height = 1.4, boundary_type = "reflective")
 z_max = openmc.ZPlane(1, boundary_type = "reflective")
 z_min = openmc.ZPlane(-1, boundary_type = "reflective")
-inf_cylinder = -openmc.ZCylinder(r = 0.234, boundary_type = "transmission")
-sec_cylinder = -openmc.ZCylinder(r = 0.254,  boundary_type = "transmission")
-third_cylinder = -openmc.ZCylinder(r = 0.284, boundary_type = "transmission")
+inf_cylinder = -openmc.ZCylinder(r = 0.3, boundary_type = "transmission")
+sec_cylinder = -openmc.ZCylinder(r = 0.32,  boundary_type = "transmission")
+third_cylinder = -openmc.ZCylinder(r = 0.35, boundary_type = "transmission")
 
 #now, just having the 'surfaces'/regions is insufficient, we need to combine them with logic
 box_outside_cylinder = -box &+ z_min &- z_max &~ inf_cylinder
