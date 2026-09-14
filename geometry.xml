@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<geometry>
+  <cell id="1" name="Fuel" material="2" region="-7 6 -5" universe="1"/>
+  <cell id="2" name="Helium layer" material="6" region="-8 6 -5" universe="1"/>
+  <cell id="3" name="Zircaloy layer" material="7" region="-9 6 -5" universe="1"/>
+  <cell id="4" name="Moderator" material="4" region="1 -2 3 -4 6 -5 7" universe="1"/>
+  <surface id="1" name="minimum x" type="x-plane" boundary="reflective" coeffs="-0.7"/>
+  <surface id="2" name="maximum x" type="x-plane" boundary="reflective" coeffs="0.7"/>
+  <surface id="3" name="minimum y" type="y-plane" boundary="reflective" coeffs="-0.7"/>
+  <surface id="4" name="maximum y" type="y-plane" boundary="reflective" coeffs="0.7"/>
+  <surface id="5" type="z-plane" boundary="reflective" coeffs="1"/>
+  <surface id="6" type="z-plane" boundary="reflective" coeffs="-1"/>
+  <surface id="7" type="z-cylinder" coeffs="0.0 0.0 0.234"/>
+  <surface id="8" type="z-cylinder" coeffs="0.0 0.0 0.254"/>
+  <surface id="9" type="z-cylinder" coeffs="0.0 0.0 0.284"/>
+</geometry>
